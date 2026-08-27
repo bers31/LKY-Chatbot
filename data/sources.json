@@ -1,0 +1,122 @@
+[
+  {
+    "id": "lky_1965-08-09_proclamation",
+    "title": "Proclamation of Singapore",
+    "speaker": "Lee Kuan Yew",
+    "date": "1965-08-09",
+    "document_type": "official proclamation",
+    "topic": ["Singapore history", "Malaysia", "governance"],
+    "source_publication": "National Archives of Singapore",
+    "source_url": "https://www.nas.gov.sg/archivesonline/data/pdfdoc/lky19650809a.pdf",
+    "local_file": "data/raw/lky_1965-08-09_proclamation-of-singapore.pdf",
+    "notes": "Dikonfirmasi, full text PDF langsung."
+  },
+  {
+    "id": "lky_1965-08-09_press-conference",
+    "title": "Transcript of a Press Conference by the Prime Minister, Mr. Lee Kuan Yew, at the Broadcasting House",
+    "speaker": "Lee Kuan Yew",
+    "date": "1965-08-09",
+    "document_type": "press conference transcript",
+    "topic": ["Singapore history", "Malaysia", "geopolitics"],
+    "source_publication": "National Archives of Singapore",
+    "source_url": "https://www.nas.gov.sg/archivesonline/speeches/record-details/740acc3c-115d-11e3-83d5-0050568939ad",
+    "local_file": "data/raw/lky_1965-08-09_press-conference-broadcasting-house.pdf",
+    "notes": "source_url ini halaman record, BUKAN link PDF langsung -- download_if_missing di ingestion.py tidak akan berhasil otomatis untuk entry ini. Perlu buka halamannya manual, cari link PDF di sana, baru update source_url + download manual ke local_file."
+  },
+  {
+    "id": "lky_1971-04-28_address",
+    "title": "Address by the Prime Minister, Mr. Lee Kuan Yew",
+    "speaker": "Lee Kuan Yew",
+    "date": "1971-04-28",
+    "document_type": "public address",
+    "topic": ["governance", "leadership"],
+    "source_publication": "National Archives of Singapore",
+    "source_url": "https://www.nas.gov.sg/archivesonline/data/pdfdoc/lky19710428.pdf",
+    "local_file": "data/raw/lky_1971-04-28_address.pdf",
+    "notes": "Dikonfirmasi, PDF langsung. Isi soal tantangan negara baru & pemerintahan efektif, dari cuplikan yang saya lihat."
+  },
+  {
+    "id": "lky_1978-02-21_education-speeches",
+    "title": "Two Speeches (Combined & Edited): Istana Chap Goh Mei Reception and Tanjong Pagar",
+    "speaker": "Lee Kuan Yew",
+    "date": "1978-02-21",
+    "document_type": "public address",
+    "topic": ["education", "meritocracy"],
+    "source_publication": "National Archives of Singapore",
+    "source_url": "https://www.nas.gov.sg/archivesonline/data/pdfdoc/lky19780304.pdf",
+    "local_file": "data/raw/lky_1978-02-21_education-meritocracy-speeches.pdf",
+    "notes": "Dikonfirmasi, PDF langsung. Menyebut sistem ujian Indian Civil Service sebagai contoh meritokrasi -- relevan utk q08/q09 di benchmark."
+  },
+  {
+    "id": "lky_1984-09-21_speak-mandarin",
+    "title": "Speech by Prime Minister Lee Kuan Yew (Speak Mandarin Campaign launch)",
+    "speaker": "Lee Kuan Yew",
+    "date": "1984-09-21",
+    "document_type": "public address",
+    "topic": ["education", "social policy"],
+    "source_publication": "National Archives of Singapore",
+    "source_url": "https://www.nas.gov.sg/archivesonline/data/pdfdoc/lky19840921a.pdf",
+    "local_file": "data/raw/lky_1984-09-21_speak-mandarin-campaign.pdf",
+    "notes": "Dikonfirmasi, PDF langsung. Soal kebijakan dwibahasa & mother tongue."
+  },
+  {
+    "id": "lky_1984-12-19_fullerton-rally",
+    "title": "Speech at the Fullerton Square Rally",
+    "speaker": "Lee Kuan Yew",
+    "date": "1984-12-19",
+    "document_type": "rally speech",
+    "topic": ["meritocracy", "politics"],
+    "source_publication": "National Archives of Singapore",
+    "source_url": "https://www.nas.gov.sg/archivesonline/data/pdfdoc/lky19841219.pdf",
+    "local_file": "data/raw/lky_1984-12-19_fullerton-rally.pdf",
+    "notes": "PDF link dikonfirmasi ADA (dari sitasi akademik soal meritokrasi), tapi saya belum lihat isi cuplikannya langsung -- confidence lebih rendah dari entry lain, verifikasi topic setelah baca isi lengkap."
+  },
+  {
+    "id": "lky_1973-08-03_address-excerpts",
+    "title": "Excerpts of Address by Singapore's Prime Minister",
+    "speaker": "Lee Kuan Yew",
+    "date": "1973-08-03",
+    "document_type": "public address (excerpts)",
+    "topic": ["geopolitics", "United States", "China"],
+    "source_publication": "National Archives of Singapore",
+    "source_url": "https://www.nas.gov.sg/archivesonline/data/pdfdoc/lky19730803.pdf",
+    "local_file": "data/raw/lky_1973-08-03_address-excerpts.pdf",
+    "notes": "Dikonfirmasi, PDF langsung. Bahas Nixon, kunjungan ke China/Soviet, SALT -- relevan utk q13/q14."
+  },
+  {
+    "id": "lky_1979-06-02_interview",
+    "title": "Transcript of an Interview",
+    "speaker": "Lee Kuan Yew",
+    "date": "1979-06-02",
+    "document_type": "interview transcript",
+    "topic": ["China", "Southeast Asia", "geopolitics"],
+    "source_publication": "National Archives of Singapore",
+    "source_url": "https://www.nas.gov.sg/archivesonline/data/pdfdoc/lky19790602.pdf",
+    "local_file": "data/raw/lky_1979-06-02_interview.pdf",
+    "notes": "Dikonfirmasi, PDF langsung. Bahas Deng Xiaoping & masa depan politik China -- relevan utk q13/q15."
+  },
+  {
+    "id": "lky_1982-07-15_guildhall-reply",
+    "title": "Reply by the Prime Minister Lee Kuan Yew to the Chamberlain's Address, Guildhall, London",
+    "speaker": "Lee Kuan Yew",
+    "date": "1982-07-15",
+    "document_type": "ceremonial address",
+    "topic": ["international relations"],
+    "source_publication": "National Archives of Singapore",
+    "source_url": "https://www.nas.gov.sg/archivesonline/data/pdfdoc/lky19820715a.pdf",
+    "local_file": "data/raw/lky_1982-07-15_guildhall-reply.pdf",
+    "notes": "PDF link dikonfirmasi ADA (dari sitasi akademik), isi belum saya lihat langsung -- confidence rendah, cek isi & topic setelah download."
+  },
+  {
+    "id": "lky_1977-02-23_parliament",
+    "title": "Speech by the Prime Minister, Mr. Lee Kuan Yew, in Parliament",
+    "speaker": "Lee Kuan Yew",
+    "date": "1977-02-23",
+    "document_type": "parliamentary speech",
+    "topic": ["leadership", "governance", "meritocracy"],
+    "source_publication": "National Archives of Singapore",
+    "source_url": "https://www.nas.gov.sg/archivesonline/data/pdfdoc/lky19770223.pdf",
+    "local_file": "data/raw/lky_1977-02-23_parliament-speech.pdf",
+    "notes": "Dikonfirmasi, PDF langsung. Bahas suksesi kepemimpinan, definisi 'educated man', kebijakan dwibahasa."
+  }
+]
