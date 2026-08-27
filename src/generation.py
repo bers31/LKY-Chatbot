@@ -9,7 +9,7 @@ from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 
-GENERATION_MODEL = "gemini-2.5-flash"
+GENERATION_MODEL = "gemini-3.6-flash"
 SYSTEM_PROMPT_FILE = Path("prompts/system_prompt.txt")
 
 load_dotenv()
