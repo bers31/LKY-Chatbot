@@ -30,9 +30,6 @@ client = genai.Client(api_key=api_key)
 
 
 def embed_text(text: str, retries: int = 1) -> list[float]:
-    """task_type=RETRIEVAL_DOCUMENT karena ini teks yang DISIMPAN untuk
-    dicari nanti -- beda dengan saat embed pertanyaan user (RETRIEVAL_QUERY,
-    dipakai di Phase 9)."""
     for attempt in range(retries + 1):
         try:
             result = client.models.embed_content(
@@ -42,8 +39,8 @@ def embed_text(text: str, retries: int = 1) -> list[float]:
             )
             return result.embeddings[0].values
         except Exception as e:
+            print(f"  [ERROR percobaan {attempt + 1}] {type(e).__name__}: {e}")
             if attempt < retries:
-                print(f"  (retry setelah error: {e})")
                 time.sleep(2)
             else:
                 raise
