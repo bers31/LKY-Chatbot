@@ -611,7 +611,7 @@ This is an intentional trade-off driven by the data-governance architecture.
 <p><strong>💬 Ask Lee Kuan Yew — Interactive Demo</strong></p>
 
 <p>
-<a href="#"><strong>► Live Streamlit Demo — add verified URL here</strong></a>
+<a href="https://lky-chatbot-cssvxmam6rqr4ougyunazp.streamlit.app/"><strong>► Live Streamlit Demo</strong></a>
 </p>
 
 </div>
