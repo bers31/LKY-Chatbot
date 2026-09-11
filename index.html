@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bernardo Nandaniar Sunia — Data Analyst</title>
+<meta name="description" content="Portofolio Bernardo Nandaniar Sunia, Data Analyst & Data Scientist dengan fokus pada NLP dan Aspect-Based Sentiment Analysis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --accent:#6D28D9;
+    --accent-dark:#4C1D95;
+    --accent-light:#8B5CF6;
+    --gold:#F59E0B;
+    --gold-dark:#B45309;
+    --ink:#211C2E;
+    --ink-soft:#6B6478;
+    --bg:#FFFFFF;
+    --card-bg:#F8F6FC;
+    --border:#E6E1F2;
+    --serif:'IBM Plex Serif', Georgia, serif;
+    --sans:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --mono:'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  #loading{
+    max-width:760px;
+    margin:0 auto;
+    padding:140px 24px;
+    text-align:center;
+    color:var(--ink-soft);
+    font-family:var(--mono);
+    font-size:13px;
+    letter-spacing:.03em;
+    text-transform:uppercase;
+  }
+  #content{
+    max-width:800px;
+    margin:0 auto;
+    padding:32px 20px 100px;
+    display:none;
+  }
+
+  /* ===== Hero (header & footer contact blocks) ===== */
+  #content .hero{
+    background:linear-gradient(135deg,#3B0764 0%, #4C1D95 32%, #6D28D9 68%, #7C3AED 100%);
+    color:#F5F3FF;
+    border-radius:20px;
+    padding:56px 32px;
+    margin:0 0 48px;
+    text-align:center;
+    box-shadow:0 20px 40px -12px rgba(76,29,149,0.35);
+  }
+  #content .hero h1{
+    font-family:var(--serif);
+    font-weight:700;
+    font-size:clamp(28px,5vw,40px);
+    color:#ffffff;
+    margin:0 0 18px;
+    letter-spacing:-.01em;
+  }
+  /* ===== Contact Hero ===== */
+  #content .contact-hero{
+    background:
+      radial-gradient(circle at 20% 20%, rgba(236,38,140,0.08), transparent 35%),
+      radial-gradient(circle at 80% 80%, rgba(245,158,11,0.05), transparent 30%),
+      #FFF1F8;
+    color:var(--ink);
+    border:2px solid #F9B8DD;
+    box-shadow:0 20px 40px -12px rgba(233,30,140,0.16);
+  }
+  
+  #content .contact-hero p{
+    color:#E91E8C;
+  }
+  
+  #content .contact-hero p:first-child{
+    color:#E91E8C;
+    font-size:19px;
+    font-weight:600;
+  }
+  
+  #content .contact-hero p:last-child{
+    color:#E91E8C;
+  }
+  
+  #content .contact-hero a{
+    border-bottom:none;
+  }
+  
+  #content .contact-hero a:hover{
+    border-bottom:none;
+  }
+  #content .hero img{margin:6px 4px;}
+  #content .hero p{color:#E9E1FB; margin:8px 0 0; font-size:15px;}
+  #content .hero p:has(img){margin-top:16px;}
+  #content .hero a{border-bottom:none;}
+  #content .hero h1 + p{
+    font-size:19px; font-weight:700; color:#FBBF24;
+    margin:2px 0 20px; letter-spacing:.01em;
+  }
+
+  /* ===== Project screenshots ===== */
+  #content img[src*="images/"]{
+    display:block; width:100%; margin:16px 0;
+    border-radius:10px; border:1px solid var(--border);
+    box-shadow:0 8px 24px -8px rgba(76,29,149,0.25);
+  }
+
+  /* ===== Headings ===== */
+  #content h2{
+    font-family:var(--serif);
+    font-weight:700;
+    font-size:26px;
+    letter-spacing:-.005em;
+    color:var(--accent-dark);
+    margin:56px 0 26px;
+    padding-bottom:12px;
+    border-bottom:3px solid var(--accent-light);
+  }
+  #content h2:first-of-type{margin-top:8px;}
+  #content h3{
+    font-family:var(--sans);
+    font-weight:700;
+    font-size:18px;
+    margin:0 0 6px;
+    color:var(--ink);
+  }
+
+  /* ===== Entry cards (auto-wrapped by JS around each h3 block) ===== */
+  #content .entry-card{
+    background:var(--card-bg);
+    border:1px solid var(--border);
+    border-left:5px solid var(--accent);
+    border-radius:12px;
+    padding:22px 26px 24px;
+    margin-bottom:22px;
+    transition:box-shadow .2s ease, transform .2s ease, border-left-color .2s ease;
+  }
+  #content .entry-card:hover{
+    box-shadow:0 14px 30px -10px rgba(109,40,217,0.25);
+    transform:translateY(-3px);
+    border-left-color:var(--gold);
+  }
+  #content .entry-card h3{margin-top:0;}
+  #content .entry-card p, #content .entry-card ul{margin-bottom:10px;}
+  #content .entry-card ul{margin-top:10px;}
+
+  /* ===== Body text ===== */
+  #content p{margin:0 0 14px;}
+  #content ul{margin:8px 0 18px; padding-left:22px;}
+  #content li{margin-bottom:7px;}
+  #content li::marker{color:var(--accent);}
+  #content strong{font-weight:700; color:var(--ink);}
+  #content em{font-style:italic; color:var(--ink-soft);}
+  #content a{
+    color:var(--accent-dark);
+    text-decoration:none;
+    border-bottom:1.5px solid rgba(109,40,217,.35);
+    transition:border-color .15s ease, color .15s ease;
+  }
+  #content a:hover{border-bottom-color:var(--accent-dark); color:var(--accent);}
+  #content > hr{display:none;}
+
+  /* ===== Inline code / mini tech tags ===== */
+  #content code{
+    font-family:var(--mono);
+    font-size:12.5px;
+    background:#EFEAFB;
+    color:var(--accent-dark);
+    padding:3px 9px;
+    border-radius:6px;
+    border:1px solid var(--border);
+    white-space:nowrap;
+  }
+
+  /* ===== Images / badges ===== */
+  #content img{max-width:100%; height:auto; vertical-align:middle;}
+  #content p:has(img[src*="shields.io"]),
+  #content p:has(img[src*="img.shields.io"]){
+    display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:12px 0;
+  }
+  #content p:has(img[src*="shields.io"]) a,
+  #content p:has(img[src*="img.shields.io"]) a{border-bottom:none; line-height:0;}
+
+  /* ===== Tables ===== */
+  #content table{width:100%; border-collapse:collapse; margin:18px 0 26px; font-size:14.5px; overflow:hidden; border-radius:10px; border:1px solid var(--border);}
+  #content th{
+    background:var(--accent); color:#fff; text-align:left;
+    padding:12px 18px; font-size:12px; text-transform:uppercase; letter-spacing:.05em; font-weight:600;
+  }
+  #content td{padding:11px 18px; border-top:1px solid var(--border);}
+  #content tr:nth-child(even) td{background:var(--card-bg);}
+
+  /* ===== Blockquote (highlight callouts) ===== */
+  #content blockquote{
+    margin:20px 0; padding:16px 22px;
+    background:#FFFBEB;
+    border-left:4px solid var(--gold);
+    border-radius:0 10px 10px 0;
+    color:var(--gold-dark);
+  }
+  #content blockquote p{margin:0; color:inherit;}
+  #content blockquote strong{color:#92400E;}
+
+  /* ===== GitHub Project Button ===== */
+  #content .github-project-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    margin-top:20px;
+    padding:11px 18px;
+    border-radius:8px;
+    background:#211C2E;
+    color:#FFFFFF;
+    font-family:var(--sans);
+    font-size:14px;
+    font-weight:600;
+    line-height:1.4;
+    text-decoration:none;
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 6px 14px rgba(33,28,46,.16);
+    transition:
+      background .2s ease,
+      border-color .2s ease,
+      transform .2s ease,
+      box-shadow .2s ease;
+  }
+  
+  #content .github-project-btn:hover{
+    background:#4C1D95;
+    border-color:#4C1D95;
+    color:#FFFFFF;
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(76,29,149,.22);
+  }
+  
+  #content .github-project-btn:focus-visible{
+    outline:3px solid #FBBF24;
+    outline-offset:3px;
+  }
+  
+  #content .github-project-btn svg{
+    width:18px;
+    height:18px;
+    flex-shrink:0;
+  }
+  
+  @media (max-width:600px){
+    #content{padding:20px 14px 72px;}
+    #content .hero{padding:40px 22px; border-radius:16px;}
+    #content h2{margin-top:44px; font-size:22px;}
+    #content .entry-card{padding:18px 18px 20px;}
+  }
+</style>
+</head>
+<body>
+
+<div id="loading">Memuat portofolio…</div>
+<main id="content"></main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/16.3.0/lib/marked.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.4.11/purify.min.js"></script>
+<script>
+  function wrapEntryCards(container){
+    var h3s = Array.prototype.slice.call(container.querySelectorAll('h3'));
+    h3s.forEach(function(h3){
+      // Skip if already wrapped (defensive, shouldn't happen)
+      if (h3.parentElement && h3.parentElement.classList.contains('entry-card')) return;
+
+      var wrapper = document.createElement('div');
+      wrapper.className = 'entry-card';
+      h3.parentNode.insertBefore(wrapper, h3);
+
+      var node = h3;
+      while (node) {
+        var next = node.nextSibling;
+        var isBoundary = (node !== h3) && node.nodeType === 1 &&
+          (node.tagName === 'H2' || node.tagName === 'H3' || node.tagName === 'HR');
+        if (isBoundary) break;
+        wrapper.appendChild(node);
+        node = next;
+      }
+    });
+  }
+
+  async function renderReadme(){
+    var loadingEl = document.getElementById('loading');
+    var contentEl = document.getElementById('content');
+    try{
+      var res = await fetch('./README.md', {cache:'no-cache'});
+      if(!res.ok) throw new Error('README.md tidak ditemukan (status ' + res.status + ')');
+      var markdown = await res.text();
+
+      marked.setOptions({gfm:true, breaks:false});
+      var rawHtml = marked.parse(markdown);
+      var cleanHtml = DOMPurify.sanitize(rawHtml, {ADD_ATTR:['target','rel','align','class']});
+
+      contentEl.innerHTML = cleanHtml;
+      // ===== GitHub Project Button =====
+      var githubBtn = document.createElement('a');
+      
+      githubBtn.className = 'github-project-btn';
+      githubBtn.href = 'https://github.com/bers31/bernardo.github.io';
+      githubBtn.target = '_blank';
+      githubBtn.rel = 'noopener noreferrer';
+      githubBtn.setAttribute('aria-label', 'View this portfolio project on GitHub');
+      
+      githubBtn.innerHTML = `
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56
+          0-.28-.01-1.02-.02-2-3.2.69-3.88-1.54-3.88-1.54-.53-1.33-1.28-1.68-1.28-1.68-1.04-.71.
+          .08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.75.4-1.25.73-1.54
+          -2.56-.29-5.26-1.28-5.26-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31
+          3.15 1.18a10.94 10.94 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06
+          .73.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.4-5.27 5.69.41.35.78 1.04.78 2.1 0 1.52-.01 2.75-.01
+          3.12 0 .31.21.68.8.56A10.99 10.99 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+        </svg>
+        <span>View Project on GitHub</span>
+      `;
+      
+      var hero = contentEl.querySelector('.hero');
+      
+      if (hero) {
+        var heroTitle = hero.querySelector('h1');
+      
+        if (heroTitle) {
+          /*
+           * Letakkan tombol setelah subtitle/profesi.
+           * Contoh:
+           *
+           * Bernardo Nandaniar Sunia
+           * Data Analyst
+           * [ View Project on GitHub ]
+           */
+          var subtitle = heroTitle.nextElementSibling;
+      
+          if (subtitle && subtitle.tagName === 'P') {
+            subtitle.insertAdjacentElement('afterend', githubBtn);
+          } else {
+            heroTitle.insertAdjacentElement('afterend', githubBtn);
+          }
+        } else {
+          hero.appendChild(githubBtn);
+        }
+      } else {
+        /*
+         * Fallback apabila README.md tidak mempunyai
+         * elemen dengan class="hero".
+         */
+        contentEl.insertBefore(githubBtn, contentEl.firstChild);
+      }
+
+      contentEl.querySelectorAll('a[href^="http"]').forEach(function(a){
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener noreferrer');
+      });
+
+      wrapEntryCards(contentEl);
+
+      loadingEl.style.display = 'none';
+      contentEl.style.display = 'block';
+    }catch(err){
+      loadingEl.textContent = 'README.md belum ditemukan di folder yang sama dengan index.html.';
+      console.error(err);
+    }
+  }
+  renderReadme();
+</script>
+
+</body>
+</html>
