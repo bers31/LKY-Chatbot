@@ -168,8 +168,6 @@ but does **not** commit the source PDFs, extracted text, or pre-built vector dat
 
 At runtime, the application can retrieve the primary documents and rebuild the index rather than redistributing a packaged copy of the source corpus.
 
-See [Data Governance & Legal Compliance](#-data-governance--legal-compliance).
-
 ### 🧪 Evaluation-Driven Development
 
 The project includes a **24-question evaluation benchmark** covering both ordinary and adversarial use cases.
