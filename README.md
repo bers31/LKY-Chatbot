@@ -620,29 +620,6 @@ This is an intentional trade-off driven by the data-governance architecture.
 
 ---
 
-## 📸 Screenshots
-
-Add screenshots after the deployed interface has been verified.
-
-Suggested structure:
-
-```text
-images/
-├── chat-answer.png
-├── sources-expander.png
-├── retrieval-debug.png
-└── abstention-example.png
-```
-
-A useful portfolio screenshot set should demonstrate four things:
-
-1. Normal grounded answer
-2. Visible source citations
-3. Retrieved-passage inspection
-4. Correct abstention on an unsupported question
-
----
-
 ## 💼 Portfolio Alignment
 
 | Capability                  | Evidence in This Project                                           |
