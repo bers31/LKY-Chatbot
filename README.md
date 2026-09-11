@@ -1,6 +1,6 @@
 <div class="hero">
 
-<h1>🇸🇬 Ask Lee Kuan Yew — Grounded RAG Chatbot</h1>
+<h1>Ask Lee Kuan Yew — Grounded RAG Chatbot</h1>
 
 <p>Evidence-Grounded AI Simulation · Retrieval-Augmented Generation · Hallucination Control · Evaluation-Driven Engineering</p>
 
